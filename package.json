@@ -1,0 +1,25 @@
+{
+  "name": "diaryapp",
+  "version": "1.0.0",
+  "description": "An app I made to track my life events after a significant loss",
+  "main": "./scripts/index.js",
+  "scripts": {
+    "backend": "node ./scripts/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatejMedvescek755/DiaryApp.git"
+  },
+  "author": "https://github.com/MatejMedvescek755",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatejMedvescek755/DiaryApp/issues"
+  },
+  "homepage": "https://github.com/MatejMedvescek755/DiaryApp#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "fs": "^0.0.1-security"
+  }
+}
