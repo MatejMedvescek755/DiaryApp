@@ -2,10 +2,11 @@
   "name": "diaryapp",
   "version": "1.0.0",
   "description": "An app I made to track my life events after a significant loss",
-  "main": "./scripts/index.js",
+  "main": "./backend/index.js",
   "scripts": {
-    "backend": "node ./scripts/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "backend": "node ./backend/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd frontend && vite"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,11 @@
   },
   "homepage": "https://github.com/MatejMedvescek755/DiaryApp#readme",
   "dependencies": {
+    "@supabase/supabase-js": "^2.99.1",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "env": "^0.0.2",
     "express": "^5.2.1",
     "fs": "^0.0.1-security"
   }

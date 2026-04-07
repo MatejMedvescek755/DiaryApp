@@ -3,14 +3,27 @@ const URL = "http://localhost:3000";
 export const postData = async (string) => {
   console.log(string);
   const date = new Date();
-  //const file_name = `${date.getUTCFullYear()}-${date.getUTCMonth() + 1}-${date.getUTCDate()}.txt`;
-  const file_name = "test.txt";
+  const file_name = `${date.getUTCFullYear()}-${date.getUTCMonth() + 1}-${date.getUTCDate()}.txt`;
+  //const file_name = "test.txt";
   const response = await fetch(URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ text: string, file_name: file_name }),
+  });
+  console.log(response);
+};
+
+export const signUp = async (email) => {
+  const response = await fetch(`${URL}/auth/signup`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email: email,
+    }),
   });
   console.log(response);
 };
